@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -22,14 +22,19 @@
 				<h1 class="title">Social Media Dashboard</h1>
 				<p class="subtitle">Total Followers: 23,004</p>
 			</div>
-			<div>
-				<p>Dark Mode</p>
+			<div class="part-dark-mode">
+				<div>
+					<p>Dark Mode</p>
+				</div>
+				<div class="dark-button" onclick="toggleTheme()">
+					<div class="dark-rond"></div>
+				</div>
 			</div>
 		</div>
 		
 
 		<div class="main-grid">
-			<div class="bloc">
+			<div class="bloc facebook">
 				<div class="media">
 					<img src="images/icon-facebook.svg" alt="">
 					<p>@nathanf</p>
@@ -38,11 +43,11 @@
 				<p class="followers">FOLLOWERS</p>
 				<div class="stats">
 					<img src="images/icon-up.svg" alt="">
-					<p class="stats-number">12 Today</p>
+					<p class="stats-number green">12 Today</p>
 				</div>
 			</div>
 		
-			<div class="bloc">
+			<div class="bloc twitter">
 				<div class="media">
 					<img src="images/icon-twitter.svg" alt="">
 					<p>@nathanf</p>
@@ -51,24 +56,27 @@
 				<p class="followers">FOLLOWERS</p>
 				<div class="stats">
 					<img src="images/icon-up.svg" alt="">
-					<p class="stats-number">99 Today</p>
+					<p class="stats-number green">99 Today</p>
 				</div>
 			</div>
-		
-			<div class="bloc">
-				<div class="media">
-					<img src="images/icon-instagram.svg" alt="">
-					<p>@realnathanf</p>
-				</div>
-				<p class="big-number">11k</p>
-				<p class="followers">FOLLOWERS</p>
-				<div class="stats">
-					<img src="images/icon-up.svg" alt="">
-					<p class="stats-number">1099 Today</p>
+			
+			<div class="insta-bloc" >
+				<div class="bloc instagram">
+					<div class="media">
+						<img src="images/icon-instagram.svg" alt="">
+						<p>@realnathanf</p>
+					</div>
+					<p class="big-number">11k</p>
+					<p class="followers">FOLLOWERS</p>
+					<div class="stats">
+						<img src="images/icon-up.svg" alt="">
+						<p class="stats-number green">1099 Today</p>
+					</div>
 				</div>
 			</div>
+			
 		
-			<div class="bloc">
+			<div class="bloc youtube">
 				<div class="media">
 					<img src="images/icon-youtube.svg" alt="">
 					<p>Nathan F.</p>
@@ -77,7 +85,7 @@
 				<p class="followers">SUBSCRIBERS</p>
 				<div class="stats">
 					<img src="images/icon-down.svg" alt="">
-					<p class="stats-number">144 Today</p>
+					<p class="stats-number red">144 Today</p>
 				</div>
 			</div>
 		</div>
@@ -88,14 +96,14 @@
 		<div class="second-grid">
 			<div class="bloc">
 				<div class="top-info">
-					<p class="second-grid-title">Page Views</h3>
+					<p class="second-grid-title">Page Views</p>
 					<img src="images/icon-facebook.svg" alt="">
 				</div>
 				<div class="bottom-info">
 					<p class="second-grid-number">87</p>
 					<div class="stats">
 						<img src="images/icon-up.svg" alt="">
-						<p class="stat-percentage">3%</p>
+						<p class="stat-percentage green">3%</p>
 					</div>
 				</div>
 			</div>
@@ -108,92 +116,92 @@
 				<div class="bottom-info">
 					<p class="second-grid-number">52</p>
 					<div class="stats">
-						<img src="images/icon-up.svg" alt="">
-						<p class="stat-percentage">2%</p>
+						<img src="images/icon-down.svg" alt="">
+						<p class="stat-percentage red">2%</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="bloc">
 				<div class="top-info">
-					<p class="second-grid-title">Likes</h3>
+					<p class="second-grid-title">Likes</p>
 					<img src="images/icon-instagram.svg" alt="">
 				</div>
 				<div class="bottom-info">
 					<p class="second-grid-number">5462</p>
 					<div class="stats">
 						<img src="images/icon-up.svg" alt="">
-						<p class="stat-percentage">2257%</p>
+						<p class="stat-percentage green">2257%</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="bloc">
 				<div class="top-info">
-					<p class="second-grid-title">Profile Views</h3>
+					<p class="second-grid-title">Profile Views</p>
 					<img src="images/icon-instagram.svg" alt="">
 				</div>
 				<div class="bottom-info">
 					<p class="second-grid-number">52k</p>
 					<div class="stats">
 						<img src="images/icon-up.svg" alt="">
-						<p class="stat-percentage">1375%</p>
+						<p class="stat-percentage green">1375%</p>
 					</div>
 				</div>
 			</div>
 	
 			<div class="bloc">
 				<div class="top-info">
-					<p class="second-grid-title">Retweets</h3>
+					<p class="second-grid-title">Retweets</p>
 					<img src="images/icon-twitter.svg" alt="">
 				</div>
 				<div class="bottom-info">
 					<p class="second-grid-number">117</p>
 					<div class="stats">
 						<img src="images/icon-up.svg" alt="">
-						<p class="stat-percentage">303%</p>
+						<p class="stat-percentage green">303%</p>
 					</div>
 				</div>
 			</div>
 	
 			<div class="bloc">
 				<div class="top-info">
-					<p class="second-grid-title">Likes</h3>
+					<p class="second-grid-title">Likes</p>
 					<img src="images/icon-twitter.svg" alt="">
 				</div>
 				<div class="bottom-info">
 					<p class="second-grid-number">507</p>
 					<div class="stats">
 						<img src="images/icon-up.svg" alt="">
-						<p class="stat-percentage">553%</p>
+						<p class="stat-percentage green">553%</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="bloc">
 				<div class="top-info">
-					<p class="second-grid-title">Likes</h3>
+					<p class="second-grid-title">Likes</p>
 					<img src="images/icon-youtube.svg" alt="">
 				</div>
 				<div class="bottom-info">
 					<p class="second-grid-number">107</p>
 					<div class="stats">
-						<img src="images/icon-up.svg" alt="">
-						<p class="stat-percentage">19%</p>
+						<img src="images/icon-down.svg" alt="">
+						<p class="stat-percentage red">19%</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="bloc">
 				<div class="top-info">
-					<p class="second-grid-title">Total Views</h3>
+					<p class="second-grid-title">Total Views</p>
 					<img src="images/icon-youtube.svg" alt="">
 				</div>
 				<div class="bottom-info">
 					<p class="second-grid-number">1407</p>
 					<div class="stats">
-						<img src="images/icon-up.svg" alt="">
-						<p class="stat-percentage">12%</p>
+						<img src="images/icon-down.svg" alt="">
+						<p class="stat-percentage red">12%</p>
 					</div>
 				</div>
 			</div>
@@ -202,7 +210,23 @@
 	
 	<div class="attribution">
 		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-		Coded by <a href="#">Your Name Here</a>.
+		Coded by <a href="#">Colin Noiret</a>.
 	</div>
+
+	<script>
+		function setTheme(themeName) {
+			localStorage.setItem('theme', themeName);
+			document.documentElement.className = themeName;
+		}
+
+		function toggleTheme() {
+			if(localStorage.getItem('theme') === 'theme-dark') {
+				setTheme('theme-light');
+			}
+			else{
+				setTheme('theme-dark');
+			}
+		}
+	</script>
 </body>
 </html>
