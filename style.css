@@ -243,4 +243,8 @@ img{
     .title{
         font-size: x-large;
     }
+
+    .part-dark-mode{
+        justify-content: space-between;
+    }
 }
